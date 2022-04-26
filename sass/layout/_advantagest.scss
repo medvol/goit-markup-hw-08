@@ -45,6 +45,11 @@
     text-align: center;
 
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: $tablet) {
+        text-align: start;
+        
+    }
     
 }
 

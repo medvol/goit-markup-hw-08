@@ -108,6 +108,13 @@ strong {
     display: block;
 }
 
+.footer-form {
+    @media screen and (min-width: $desktop) {
+       margin-left: auto;
+        
+    }
+}
+
 .footer-form__title {
 
     margin-bottom: 20px;

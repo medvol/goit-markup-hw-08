@@ -39,20 +39,6 @@
     
 }
 
-.team-member__image {
-    @media screen and (min-width: $mobile){
-        width: 450px;
-        height: 460px;
-
-    }
-    
-
-    @media screen and (min-width: $tablet){
-        width: 354px;
-        height: 374px;
-    }
-}
-
 .team-member_thumb {
     padding: var(--card-set-gap);
 

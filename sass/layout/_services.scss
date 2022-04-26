@@ -9,7 +9,7 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: center;
-        flex-basis: calc(100%/3 - var (--card-set-gap));
+        flex-basis: calc(100%/3 - var(--card-set-gap));
 
     }
    

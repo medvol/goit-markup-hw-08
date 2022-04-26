@@ -247,7 +247,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1230px;
+    width: 1200px;
   }
 }
 
@@ -1152,7 +1152,7 @@ strong {
   .services {
     display: flex;
     align-items: center;
-    flex-basis: calc(100%/3 - var (--card-set-gap));
+    flex-basis: calc(100%/3 - var(--card-set-gap));
   }
 }
 
@@ -1216,8 +1216,6 @@ strong {
 @media screen and (min-width: 1200px) {
   .team-member {
     flex-basis: calc(100%/4 - var(--card-set-gap));
-    margin-top: var(--card-set-gap);
-    margin-left: var(--card-set-gap);
   }
 }
 

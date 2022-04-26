@@ -1,0 +1,148 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--secondary-background-color);
+
+}
+
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer__logo {
+    margin-right: 0;
+
+}
+
+.logo--footer-color {
+    color: var(--third-text-color);
+
+}
+
+.address-list {
+    margin-top: 20px;
+
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+
+}
+
+.address-list__link {
+    font-style: normal;
+    
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address-list__link--change-color {
+    font-style: normal;
+    
+    color: var(--third-text-color);
+
+}
+
+.footer-social {
+
+    margin-right: auto;
+    margin-left: 70px;
+}
+
+.footer-social__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--third-text-color);
+}
+
+.social-list--footer-color {
+    color: var(--third-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social .social-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+strong {
+    display: block;
+}
+
+.footer-form {
+    /* margin-left: 93px; */
+    justify-content: flex-end;
+}
+
+.footer-form__title {
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--third-text-color);
+
+}
+
+.footer-form__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+
+    color: var(--third-text-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: var(--secondary-background-color);
+
+    &::placeholder {
+        @include font (16px, 1.25, 0.03em);
+    
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+.footer-form__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 12px;
+
+    &::after {
+        content: '';
+    
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    
+        background-image: url(../images/icon_send.svg);
+        background-size: contain;
+    
+    }
+
+}
+

@@ -1,0 +1,31 @@
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --third-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --hover-color-button: #188CE8;
+    --logo-color-header: #000000;
+    --social-link-color: #AFB1B8;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+    --third-background-color: #F5F4FA;
+    --background-filter-button: #F5F4FA;
+    --hero-background-color: #C4C4C4;
+    --cards-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --cards-border-radius: 0px 0px 4px 4px;
+    --button-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --button-border-radius: 4px;
+    --card-set-gap: 30px;
+    --social-icon-color: #AFB1B8;
+
+}
+
+body {
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}

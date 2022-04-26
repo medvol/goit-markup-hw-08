@@ -1,0 +1,9 @@
+.page-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    text-align: center;
+    @include font (36px, 1.17, 0.03em);
+ 
+    color: var(--secondary-text-color);
+}

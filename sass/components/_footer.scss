@@ -7,8 +7,30 @@
 }
 
 .page-footer__container {
-    display: flex;
-    align-items: baseline;
+   
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+        
+    }
+   
+}
+.footer-tablet {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+
+    }
+}
+
+.footer-address {
+    @media screen and (max-width: 1199px) {
+               
+        text-align: center;
+        margin-bottom: 60px;
+
+    }    
 }
 
 .page-footer__logo {
@@ -52,9 +74,15 @@
 }
 
 .footer-social {
+    text-align: center;
+    margin-bottom: 60px;
 
-    margin-right: auto;
-    margin-left: 70px;
+    @media screen and (min-width: $desktop) {
+             
+        margin-right: auto;
+        margin-left: 70px;
+}
+    
 }
 
 .footer-social__title {
@@ -80,11 +108,6 @@ strong {
     display: block;
 }
 
-.footer-form {
-    /* margin-left: 93px; */
-    justify-content: flex-end;
-}
-
 .footer-form__title {
 
     margin-bottom: 20px;
@@ -92,30 +115,54 @@ strong {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
 
     color: var(--third-text-color);
+
+    @media screen and (min-width: $desktop) {
+        text-align: start;
+        
+    }
 
 }
 
 .footer-form__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    
 }
 
 .footer-form__input {
-    width: 358px;
+    display: block;
+   
     height: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 16px;
-
+       
     color: var(--third-text-color);
-
+    
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-
+    
     background-color: var(--secondary-background-color);
 
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin: 0;
+        
+    }
+    
     &::placeholder {
         @include font (16px, 1.25, 0.03em);
     
@@ -123,15 +170,15 @@ strong {
     }
 }
 
-
-
 .footer-form__button {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-left: 12px;
-
+  
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+    }
+ 
     &::after {
         content: '';
     
@@ -141,8 +188,6 @@ strong {
     
         background-image: url(../images/icon_send.svg);
         background-size: contain;
-    
     }
-
 }
 

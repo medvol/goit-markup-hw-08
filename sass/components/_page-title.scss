@@ -1,9 +1,17 @@
 .page-title {
-    margin-bottom: 50px;
-
+    margin-bottom: var(--card-set-gap);
+    @include font (28px, 1.18, 00.03em);
+    
     font-weight: 700;
     text-align: center;
-    @include font (36px, 1.17, 0.03em);
- 
+
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+                
+        @include font (36px, 1.17, 0.03em);
+          
+    }
+    
 }

@@ -20,8 +20,7 @@ p {
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -32,6 +31,13 @@ img {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width:$desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+    }
+    
 }

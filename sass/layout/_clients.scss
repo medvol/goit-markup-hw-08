@@ -1,22 +1,41 @@
 .clients-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+    margin-top: calc(-1*var(--card-set-gap));
     margin-left: calc(-1*var(--card-set-gap));
+
+    @media screen and (min-width:$desktop) {
+        margin-top: 0px;
+    }
+    
 }
 
 .clients {
-
+    flex-basis: calc(100%/2 - var(--card-set-gap));
+    margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(100%/3 - var(--card-set-gap));
+
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-top: 0px;
+    }
     
 }
 
 .clients__link {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
+    
    
     border: 1px solid var(--social-link-color);
     border-radius: var(--button-border-radius);
@@ -24,6 +43,11 @@
     color: var(--social-link-color);
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+     
+    }
 
     &:hover,
     &:focus {

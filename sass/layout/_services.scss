@@ -1,11 +1,18 @@
 .section--services-padding {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
     padding-top: 0;
 }
 
 .services {
-    display: flex;
-    align-items: center;
-    flex-basis: calc(100%/3 - var (--card-set-gap));
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        flex-basis: calc(100%/3 - var (--card-set-gap));
+
+    }
+   
 }
 
 .services__item {

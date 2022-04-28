@@ -1,5 +1,7 @@
 .modal {
     position: absolute;
+    
+   
     width: 450px;
     height: 609px;
     top: 50%;
@@ -8,6 +10,10 @@
     transform: translate(-50%, -50%);
 
     background-color: var(--primary-background-color);
+
+    @media screen and (min-width: $mobile){
+        width: 450px;
+    }
 
     @media screen and (min-width: $desktop) {
         width: 528px;

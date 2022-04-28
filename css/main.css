@@ -530,6 +530,12 @@ img {
   background-color: var(--primary-background-color);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -736,7 +742,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-social {
-    margin-right: auto;
+    text-align: start;
     margin-left: 70px;
   }
 }
@@ -756,10 +762,6 @@ img {
 
 .footer-social .social-list__item:not(:last-child) {
   margin-right: 10px;
-}
-
-strong {
-  display: block;
 }
 
 @media screen and (min-width: 1200px) {

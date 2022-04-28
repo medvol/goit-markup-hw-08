@@ -530,12 +530,6 @@ img {
   background-color: var(--primary-background-color);
 }
 
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;

@@ -1,6 +1,8 @@
  
 
     .mobile-menu {
+        display: flex;
+       
         position: absolute;
         top: 0;
         left: 0;
@@ -32,19 +34,19 @@
     }
     
     .mobile-menu__container {
+        display: flex;
+        flex-direction: column;
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
         padding-left: 40px;
     
     }
-    
-    .mobile-menu__item {
+
+      
+    .mobile-menu__item:not(:last-child) {
         margin-bottom: 32px;
     
-        &:last-child {
-            margin-bottom: 302px;
-        }
     }
     
     .mobile-menu__link {
@@ -59,6 +61,11 @@
     
     .mobile-menu__link--current-page {
         color: var(--accent-color);
+    }
+
+    .mobile-menu-contact {
+       
+        margin-top: auto;
     }
     
     .mobile-menu-contact__item {

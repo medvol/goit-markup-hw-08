@@ -862,7 +862,7 @@ img {
 
 .mobile-menu {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -945,6 +945,7 @@ img {
 
 .mobile-menu-social__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -958,6 +959,8 @@ img {
 }
 
 .mobile-menu-social__link {
+  display: block;
+  margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
